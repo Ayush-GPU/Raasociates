@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rajnish Arvind & Associates | Chartered Accountants | Dehradun, India</title>
+    <meta name="description" content="Professional Chartered Accountants in Dehradun, India. Specializing in Taxation, Audit, GST Compliance, and Corporate Advisory services for startups and corporations.">
+    <meta name="keywords" content="CA near me, GST filing India, ITR filing online India, Chartered accountant for startups India, Rajnish Arvind and Associates">
+    
+    <!-- Google Search Console Verification (Placeholder) -->
+    <!-- Replace 'YOUR_VERIFICATION_CODE' with the code from Google Search Console -->
+    <meta name="google-site-verification" content="YOUR_VERIFICATION_CODE" />
+
+    <!-- Google Analytics (Placeholder) -->
+    <!-- Replace 'G-XXXXXXXXXX' with your Google Analytics Measurement ID -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXXXXX');
+    </script>
+
+    <!-- Schema.org / JSON-LD Local Business SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "AccountingService",
+      "name": "Rajnish Arvind & Associates",
+      "image": "https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/logo_placeholder.png",
+      "@id": "",
+      "url": "https://your-website-url.com",
+      "telephone": "+918192000956",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Vasant Vihar Phase 1, Mohit Nagar",
+        "addressLocality": "Dehradun",
+        "postalCode": "248006",
+        "addressRegion": "Uttarakhand",
+        "addressCountry": "IN"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 30.3411,
+        "longitude": 78.0011
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday"
+        ],
+        "opens": "10:00",
+        "closes": "18:00"
+      }
+    }
+    </script>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- GSAP & ScrollTrigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+    <!-- HLS.js for m3u8 streaming -->
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div id="preloader" class="preloader">
+        <div class="preloader-content">
+            <div class="preloader-logo">Rajnish Arvind & Associates</div>
+            <div class="preloader-bar-container">
+                <div id="preloader-bar" class="preloader-bar"></div>
+            </div>
+            <div class="preloader-text">Loading Financial Excellence...</div>
+        </div>
+    </div>
+
+    <!-- Scroll Progress Indicator -->
+    <div id="scroll-progress" class="scroll-progress-bar"></div>
+
+    <!-- Navigation -->
+    <header class="navbar">
+        <div class="logo">
+            <span class="logo-text">Rajnish Arvind & Associates</span>
+        </div>
+        <nav class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#about">About Us</a>
+            <div class="dropdown">
+                <a href="#services" class="dropbtn">Services ▾</a>
+                <div class="dropdown-content">
+                    <a href="#services-gst">GST Services</a>
+                    <a href="#services-it">Income Tax</a>
+                    <a href="#services-audit">Audit</a>
+                    <a href="#services-company">Company Registration</a>
+                </div>
+            </div>
+            <a href="#blog">Blog</a>
+            <a href="#tools">Resources (Tools)</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <div class="nav-actions">
+            <a href="#contact" class="signup">Get in Touch</a>
+        </div>
+    </header>
+
+    <!-- Fullscreen Video Background with Aura Mask -->
+    <div id="video-background-container">
+        <video autoplay loop muted playsinline id="live-background">
+            <source
+                src="https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260418_115655_b4d9cd77-feed-43cd-a198-af78ebdf1f7a.mp4"
+                type="video/mp4">
+        </video>
+        <div id="video-overlay"></div>
+    </div>
+
+    <!-- Background Navigation Buttons -->
+    <button id="bg-prev" class="bg-nav-btn bg-nav-left">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M15 18l-6-6 6-6" />
+        </svg>
+    </button>
+    <button id="bg-next" class="bg-nav-btn bg-nav-right">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M9 18l6-6-6-6" />
+        </svg>
+    </button>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1 class="hero-title">Chartered Accountants & <br>Financial Experts</h1>
+                <p class="hero-sub">GST • Tax • Audit • Compliance</p>
+
+                <div class="search-bar-wrapper">
+                    <div class="search-bar">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                        </svg>
+                        <input type="text" id="ai-search-input"
+                            placeholder="Ask your problem here from our Accountant AI made for you">
+                    </div>
+                    <!-- AI Suggestion Box -->
+                    <div id="ai-suggestion-box" class="ai-suggestion-box">
+                        <div class="ai-header">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#d4af37"
+                                stroke-width="2">
+                                <path
+                                    d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83" />
+                            </svg>
+                            <span>Accountant AI</span>
+                        </div>
+                        <div id="ai-response-content" class="ai-content"></div>
+                    </div>
+                </div>
+                
+                <!-- Hero CTA -->
+                <div class="hero-cta" style="margin-top: 3rem;">
+                    <a href="#contact" class="primary-btn hero-btn">Book Consultation</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Overview Section -->
+        <section id="services" class="services-section reveal">
+            <div class="section-container">
+                <div class="section-header center">
+                    <h2>Our Core Services</h2>
+                    <p style="color: #aaa; margin-top: 1rem; font-size: 1.1rem;">Comprehensive financial solutions tailored for your business growth and compliance.</p>
+                </div>
+                <div class="services-grid">
+                    <div class="service-card reveal" id="services-gst" style="transition-delay: 0ms;">
+                        <div class="service-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#d4af37" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                        </div>
+                        <h3>GST Filing India</h3>
+                        <p><strong>What it is:</strong> End-to-end GST registration and monthly compliance management.</p>
+                        <p><strong>Who needs it:</strong> Businesses wanting to avoid penalties and optimize input tax credits.</p>
+                        <p><strong>Process:</strong> Data Validation → Accurate Filing → Expert Review.</p>
+                        <a href="#contact" class="service-cta">Start GST Filing &rarr;</a>
+                    </div>
+                    <div class="service-card reveal" id="services-it" style="transition-delay: 150ms;">
+                        <div class="service-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#d4af37" stroke-width="2"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                        </div>
+                        <h3>ITR Filing Online India</h3>
+                        <p><strong>What it is:</strong> Professional ITR filing with expert CA review in 24-48 hours.</p>
+                        <p><strong>Who needs it:</strong> Individuals, HNIs, and startups looking for tax optimization.</p>
+                        <p><strong>Process:</strong> Consultation → Document Review → Strategic Filing.</p>
+                        <a href="#contact" class="service-cta">File Your ITR Now &rarr;</a>
+                    </div>
+                    <div class="service-card reveal" id="services-audit" style="transition-delay: 300ms;">
+                        <div class="service-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#d4af37" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                        </div>
+                        <h3>Audit & Assurance</h3>
+                        <p><strong>What it is:</strong> Statutory and internal audits to ensure complete financial transparency.</p>
+                        <p><strong>Who needs it:</strong> Private limited companies and firms requiring ROC compliance.</p>
+                        <p><strong>Process:</strong> Assessment → Field Verification → Compliance Reporting.</p>
+                        <a href="#contact" class="service-cta">Book an Audit &rarr;</a>
+                    </div>
+                    <div class="service-card reveal" id="services-company" style="transition-delay: 450ms;">
+                        <div class="service-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#d4af37" stroke-width="2"><rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect><rect x="9" y="9" width="6" height="6"></rect><line x1="9" y1="1" x2="9" y2="4"></line><line x1="15" y1="1" x2="15" y2="4"></line><line x1="9" y1="20" x2="9" y2="23"></line><line x1="15" y1="20" x2="15" y2="23"></line><line x1="20" y1="9" x2="23" y2="9"></line><line x1="20" y1="14" x2="23" y2="14"></line><line x1="1" y1="9" x2="4" y2="9"></line><line x1="1" y1="14" x2="4" y2="14"></line></svg>
+                        </div>
+                        <h3>Chartered Accountant for Startups India</h3>
+                        <p><strong>What it is:</strong> End-to-end business incorporation and scalability advisory.</p>
+                        <p><strong>Who needs it:</strong> Entrepreneurs starting PVT LTD, LLP, or OPC firms.</p>
+                        <p><strong>Process:</strong> Name Approval → Documentation → Incorporation Certificate.</p>
+                        <a href="#contact" class="service-cta">Register Company &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- About Snapshot Section -->
+        <section id="about" class="about-section reveal" style="padding: 8rem 0; border-top: 1px solid rgba(255,255,255,0.05);">
+            <div class="section-container">
+                <div class="section-header center">
+                    <h2>About Rajnish Arvind & Associates</h2>
+                    <p style="color: #aaa; margin-top: 1rem; font-size: 1.1rem;">A legacy of trust, excellence, and proactive financial advisory.</p>
+                </div>
+                <div class="founders-grid">
+                    <!-- Founder 1 -->
+                    <div class="founder-card">
+                        <h3>CA Arvind Kumar Agarwal</h3>
+                        <p class="role">Executive Director, BNI Uttarakhand</p>
+                        <ul class="founder-details">
+                            <li><strong>Firm:</strong> Gems Elite Management Services Pvt Ltd (Vasant Vihar)</li>
+                            <li><strong>Expertise:</strong> Scaling businesses, Member Success Program (MSP) training.
+                            </li>
+                            <li><strong>Focus:</strong> Launching chapters (BNI Doon Miracles, BNI Doon Galaxy) and
+                                promoting the "Givers Gain" philosophy.</li>
+                        </ul>
+                    </div>
+                    <!-- Founder 2 -->
+                    <div class="founder-card">
+                        <h3>CA Rajnish Agrawal</h3>
+                        <p class="role">Partner, Rajnish Arvind & Associates</p>
+                        <ul class="founder-details">
+                            <li><strong>Expertise:</strong> Income Tax, GST, Audits, Corporate Compliances.</li>
+                            <li><strong>Education:</strong> Col. Brown Cambridge School; Commerce Graduate (Dehradun).
+                            </li>
+                            <li><strong>Community:</strong> Lions Club of Dehradun SHIKAR (Past President, Zone
+                                Chairman). Contesting for 2nd Vice District Governor (2025).</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Why Choose Us Section -->
+        <section id="why-choose-us" class="why-us-section reveal" style="padding: 6rem 0; background: rgba(0,0,0,0.3);">
+            <div class="section-container">
+                <div class="section-header center">
+                    <h2>Why Choose Us</h2>
+                </div>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon" style="background: rgba(255,255,255,0.05);">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                        </div>
+                        <h3>Fast Turnaround</h3>
+                        <p>We value your time. File your ITR or register your startup in 24–48 hours with our streamlined digital process.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon" style="background: rgba(255,255,255,0.05);">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                        </div>
+                        <h3>Risk Mitigation</h3>
+                        <p>Avoid expensive legal penalties and notices. Our CA-verified reviews ensure 100% compliance with current Indian tax laws.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon" style="background: rgba(255,255,255,0.05);">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                        </div>
+                        <h3>Client-First Approach</h3>
+                        <p>Your success is our priority. We maintain transparent communication and act as true partners in your business journey.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon" style="background: rgba(212,175,55,0.1);">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#d4af37" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"></path></svg>
+                        </div>
+                        <h3>AI-Driven Automation</h3>
+                        <p>We use custom AI tools to automate repetitive filing tasks, ensuring zero manual errors and real-time email updates on your compliance status.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Block Section -->
+        <section class="cta-block" style="padding: 6rem 0; text-align: center; background: linear-gradient(135deg, rgba(212,175,55,0.1), transparent); border-top: 1px solid rgba(212,175,55,0.2); border-bottom: 1px solid rgba(212,175,55,0.2);">
+            <div class="section-container">
+                <h2 style="font-size: 2.5rem; margin-bottom: 1rem;">Ready to secure your financial future?</h2>
+                <p style="color: #ccc; font-size: 1.2rem; margin-bottom: 2.5rem; max-width: 600px; margin-left: auto; margin-right: auto;">Let our expert team handle your compliances so you can focus on scaling your business.</p>
+                <a href="#contact" class="primary-btn">Get in Touch Today</a>
+            </div>
+        </section>
+
+        <!-- Address & Contact Section -->
+        <section id="contact" class="info-section">
+            <div class="section-container">
+                <div class="contact-grid">
+                    <!-- Contact Details -->
+                    <div class="contact-details">
+                        <div class="info-block">
+                            <h2>Visit Us</h2>
+                            <p>82G3+6H7, Vasant Vihar Phase 1, Mohit Nagar</p>
+                            <p>Dehradun, Uttarakhand 248006</p>
+                        </div>
+                        <div class="info-block">
+                            <h2>Call Us</h2>
+                            <p>+91 8192000956</p>
+                            <p class="status">Temporarily closed (Please call to confirm hours)</p>
+                        </div>
+                        <div class="info-block">
+                            <h2>Email Us</h2>
+                            <p><a href="mailto:staff.rajnisharvind@gmail.com"
+                                    style="color: #aaa; text-decoration: none;">staff.rajnisharvind@gmail.com</a></p>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div class="contact-form-container">
+                        <form id="contact-form" class="contact-form">
+                            <h2>Send a Message</h2>
+                            <div class="form-group">
+                                <input type="text" id="name" placeholder="Your Name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="email" placeholder="Your Email" required>
+                            </div>
+                            <div class="form-group">
+                                <textarea id="message" placeholder="How can we help you?" rows="4" required></textarea>
+                            </div>
+                            <button type="submit" class="submit-btn">Send Message</button>
+                            <p id="form-status" class="form-status"></p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reviews Section -->
+        <!-- Tools & Calculators Section -->
+        <section id="tools" class="tools-section" style="padding: 8rem 0; background: rgba(10,10,10,0.4); border-top: 1px solid rgba(255,255,255,0.05);">
+            <div class="section-container">
+                <div class="section-header center">
+                    <h2>Resources & Financial Tools</h2>
+                    <p style="color: #aaa; margin-top: 1rem;">Free calculators to help you plan your business finances instantly.</p>
+                </div>
+
+                <div class="calculator-container" style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; margin-top: 4rem;">
+                    <!-- GST Calculator -->
+                    <div class="calc-card" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.05); padding: 3rem; border-radius: 20px; backdrop-filter: blur(20px);">
+                        <h3 style="margin-bottom: 2rem; color: #d4af37;">GST Calculator</h3>
+                        <div class="form-group" style="margin-bottom: 1.5rem;">
+                            <label style="display: block; color: #777; margin-bottom: 0.5rem; font-size: 0.9rem;">Amount (₹)</label>
+                            <input type="number" id="gst-amount" placeholder="e.g. 10000" style="width: 100%; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); color: #fff; padding: 1rem; border-radius: 8px; font-size: 1rem;">
+                        </div>
+                        <div class="form-group" style="margin-bottom: 2rem;">
+                            <label style="display: block; color: #777; margin-bottom: 0.5rem; font-size: 0.9rem;">GST Rate (%)</label>
+                            <select id="gst-rate" style="width: 100%; background: rgba(10,10,10,0.9); border: 1px solid rgba(255,255,255,0.1); color: #fff; padding: 1rem; border-radius: 8px; font-size: 1rem;">
+                                <option value="5">5%</option>
+                                <option value="12">12%</option>
+                                <option value="18" selected>18%</option>
+                                <option value="28">28%</option>
+                            </select>
+                        </div>
+                        <div class="calc-results" style="background: rgba(212,175,55,0.05); padding: 1.5rem; border-radius: 12px; border: 1px dashed rgba(212,175,55,0.3);">
+                            <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem; color: #ccc;">
+                                <span>GST Amount:</span>
+                                <span id="res-gst-tax" style="color: #fff; font-weight: 600;">₹ 0</span>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; font-size: 1.2rem; color: #d4af37; font-weight: 700;">
+                                <span>Total Amount:</span>
+                                <span id="res-gst-total">₹ 0</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tax Calculator (Simplified) -->
+                    <div class="calc-card" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.05); padding: 3rem; border-radius: 20px; backdrop-filter: blur(20px);">
+                        <h3 style="margin-bottom: 2rem; color: #d4af37;">Income Tax Estimator (FY 24-25)</h3>
+                        <div class="form-group" style="margin-bottom: 1.5rem;">
+                            <label style="display: block; color: #777; margin-bottom: 0.5rem; font-size: 0.9rem;">Annual Income (₹)</label>
+                            <input type="number" id="tax-income" placeholder="e.g. 1200000" style="width: 100%; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); color: #fff; padding: 1rem; border-radius: 8px; font-size: 1rem;">
+                        </div>
+                        <p style="font-size: 0.8rem; color: #555; margin-bottom: 2.5rem;">Note: This estimation uses the New Tax Regime slabs (FY 2024-25).</p>
+                        <div class="calc-results" style="background: rgba(212,175,55,0.05); padding: 1.5rem; border-radius: 12px; border: 1px dashed rgba(212,175,55,0.3);">
+                            <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem; color: #ccc;">
+                                <span>Estimated Tax:</span>
+                                <span id="res-income-tax" style="color: #fff; font-weight: 600;">₹ 0</span>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; font-size: 1.2rem; color: #d4af37; font-weight: 700;">
+                                <span>In-Hand Monthly:</span>
+                                <span id="res-income-hand">₹ 0</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Chatbot Widget -->
+        <div id="ai-chatbot" class="chatbot-container">
+            <button id="chatbot-toggle" class="chatbot-btn">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+            </button>
+            <div id="chatbot-window" class="chatbot-window">
+                <div class="chatbot-header">
+                    <span>Accountant AI Agent</span>
+                    <button id="chatbot-close">&times;</button>
+                </div>
+                <div id="chatbot-messages" class="chatbot-messages">
+                    <div class="bot-msg">Hi! I'm your AI assistant. How can I help you today?</div>
+                </div>
+                <div class="chatbot-input">
+                    <input type="text" id="bot-input" placeholder="Ask about GST, ITR, or Pricing...">
+                    <button id="bot-send">&rarr;</button>
+                </div>
+            </div>
+        </div>
+
+        <section id="reviews" class="reviews-section">
+            <div class="section-container">
+                <div class="reviews-header">
+                    <h2>Client Reviews</h2>
+                    <div class="rating">
+                        <span class="stars">★ 4.4</span>
+                        <span class="count">Based on 12 reviews</span>
+                    </div>
+                </div>
+                <div class="reviews-grid">
+                    <div class="review-card">
+                        <p class="quote">"Any tax related queries solved very easily"</p>
+                        <p class="author">— Rabiya Farouqui</p>
+                    </div>
+                    <div class="review-card">
+                        <p class="quote">"It's a CA firm.. a small one..But growing exponentially"</p>
+                        <p class="author">— Shilpi Sony</p>
+                    </div>
+                    <div class="review-card">
+                        <p class="quote">"They are Chartered Accounts of reputation in Dehradun. Their office is located
+                            at Vasant Vihar."</p>
+                        <p class="author">— Suresh Pande</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer" style="padding: 6rem 0 2rem 0; background: rgba(5,5,5,0.95); border-top: 1px solid rgba(255,255,255,0.05);">
+        <div class="section-container">
+            <div class="footer-grid" style="display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 4rem; margin-bottom: 4rem;">
+                <div class="footer-brand">
+                    <h2 style="font-size: 1.5rem; font-weight: 700; color: #fff; margin-bottom: 1.5rem;">Rajnish Arvind & Associates</h2>
+                    <p style="color: #aaa; line-height: 1.6; max-width: 400px;">Expert Chartered Accountants providing strategic taxation, comprehensive auditing, and reliable corporate advisory. Empowering your financial future with a legacy of trust.</p>
+                </div>
+                <div class="footer-links">
+                    <h3 style="color: #fff; margin-bottom: 1.5rem; font-weight: 600;">Quick Links</h3>
+                    <ul style="list-style: none; padding: 0; display: flex; flex-direction: column; gap: 0.8rem;">
+                        <li><a href="#home" style="color: #aaa; text-decoration: none; transition: color 0.3s;">Home</a></li>
+                        <li><a href="#about" style="color: #aaa; text-decoration: none; transition: color 0.3s;">About Us</a></li>
+                        <li><a href="#services" style="color: #aaa; text-decoration: none; transition: color 0.3s;">Services</a></li>
+                        <li><a href="#reviews" style="color: #aaa; text-decoration: none; transition: color 0.3s;">Reviews</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3 style="color: #fff; margin-bottom: 1.5rem; font-weight: 600;">Contact</h3>
+                    <p style="color: #aaa; margin-bottom: 0.5rem;">Vasant Vihar Phase 1</p>
+                    <p style="color: #aaa; margin-bottom: 0.5rem;">Dehradun, UK 248006</p>
+                    <p style="color: #aaa; margin-bottom: 0.5rem;">+91 8192000956</p>
+                    <a href="mailto:staff.rajnisharvind@gmail.com" style="color: #d4af37; text-decoration: none;">staff.rajnisharvind@gmail.com</a>
+                </div>
+            </div>
+            <div class="footer-bottom" style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 2rem; display: flex; flex-direction: column; gap: 1.5rem; color: #777; font-size: 0.85rem;">
+                <p style="line-height: 1.6; text-align: justify; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 1.5rem;"><strong>Disclaimer:</strong> This website is for informational purposes only. In accordance with the guidelines of the Institute of Chartered Accountants of India (ICAI), this website does not constitute an advertisement, solicitation, invitation, or inducement of any sort whatsoever from us or any of our members to solicit any work through this website. The content provided herein should not be interpreted as professional advice.</p>
+                <div style="display: flex; justify-content: space-between;">
+                    <p>&copy; 2026 Rajnish Arvind & Associates. All rights reserved.</p>
+                    <p>Chartered Accountants | Dehradun</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
